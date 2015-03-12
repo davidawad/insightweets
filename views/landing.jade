@@ -1,0 +1,31 @@
+//- index.jade
+extends ./layout.jade
+
+block row-content
+  center
+    //img(src="images/NYC.jpg")
+    div.row
+      h1.animated.fadeInDown.delay-07s.whiteTExt#title Insightweets
+      br
+      img.animated.fadeInDown.delay-07s(id="tBird" src='https://g.twimg.com/Twitter_logo_blue.png')
+      i.fa.fa-twitter.fa-5x.link.animated.fadeInUp.delay-1s.whiteText
+    br
+    br
+    br
+    div.row
+      form(action='/landing',method='post')
+        label.link.animated.fadeInUp.delay-1s.whiteText City
+          br
+          br
+          input(id='city',type='text',value='', placeholder='New York City', name='city')
+        br
+        label.link.animated.fadeInUp.delay-1s.whiteText Query
+          br
+          br
+          input(id='query',type='text',value='', placeholder='Cats', name='query')
+        br
+        br
+        input.link.animated.fadeInUp.delay-1s.whiteText#submit_button(type='submit',value='Submit!')
+    br
+    div.row
+      h2.link.animated.fadeInUp.delay-1s.whiteText#desc Find out about what kinds of people are talking about any given topic, in any given location, anywhere... 
