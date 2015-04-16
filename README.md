@@ -1,5 +1,7 @@
 # Insightweet
-# Find out about what people are like, anywhere. 
+# "Find out about what people are like, anywhere."
+
+## This Hack won the IBM Bluemix prize at HackNY
 
 ## An app deployed on IBM bluemix using Watson personality insights based on an aggregate of location specific Tweets from Twitter. 
 ## Built on NodeJS, using Express.js, and the Jade templating language. 
@@ -7,7 +9,6 @@
 currently [hosted](http://personality-insights-nodejs-davidawad-1759.eu-gb.mybluemix.net/landing) on IBM Bluemix
 
 using NodeJS, ExpressJS,Jade templating, and the Twitter API. 
-
 
 
   The IBM Watson [Personality Insights][service_url] service uses linguistic analysis to extract cognitive and social characteristics from input text such as email, text messages, tweets, forum posts, and more. By deriving cognitive and social preferences, the service helps users to understand, connect to, and communicate with other people on a more personalized level.
@@ -29,5 +30,5 @@ You can try this! :D
 
 [cloud_foundry]: https://github.com/cloudfoundry/cli
 
-###Built at HackNY
+### Built at HackNY
 ![](http://hacknymasters.com/assets/img/h_logo.png)
