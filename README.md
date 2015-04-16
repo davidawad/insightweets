@@ -6,9 +6,7 @@
 
 currently [hosted](http://personality-insights-nodejs-davidawad-1759.eu-gb.mybluemix.net/landing) on IBM Bluemix
 
-using NodeJS, ExpressJS, 
-
-
+using NodeJS, ExpressJS,Jade templating, and the Twitter API. 
 
 
 
@@ -31,3 +29,5 @@ You can try this! :D
 
 [cloud_foundry]: https://github.com/cloudfoundry/cli
 
+###Built at HackNY
+![](http://hacknymasters.com/assets/img/h_logo.png)
