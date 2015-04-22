@@ -13,7 +13,6 @@ using NodeJS, ExpressJS,Jade templating, and the Twitter API.
 
   The IBM Watson [Personality Insights][service_url] service uses linguistic analysis to extract cognitive and social characteristics from input text such as email, text messages, tweets, forum posts, and more. By deriving cognitive and social preferences, the service helps users to understand, connect to, and communicate with other people on a more personalized level.
 
-You can try this! :D 
 [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/davidawad/Insightweet)
 
 
@@ -30,7 +29,7 @@ You can try this! :D
 
 [cloud_foundry]: https://github.com/cloudfoundry/cli
 
-### Bluemix Prize Winner :D 
+### Bluemix Prize Winner
 ![](http://blog.rocketsoftware.com/wp-content/uploads/2015/02/Bluemix-logo-right.png)
 
 ### Built at HackNY
