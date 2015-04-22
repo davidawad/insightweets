@@ -30,5 +30,8 @@ You can try this! :D
 
 [cloud_foundry]: https://github.com/cloudfoundry/cli
 
+### Bluemix Prize Winner :D 
+![](http://blog.rocketsoftware.com/wp-content/uploads/2015/02/Bluemix-logo-right.png)
+
 ### Built at HackNY
 ![](http://hacknymasters.com/assets/img/h_logo.png)
