@@ -26,8 +26,8 @@ var credentials = extend({
 var credentials ={
   'version' : 'v2',
   'url' : "https://gateway.watsonplatform.net/personality-insights/api",
-	'username' : "7efc43c0-aaa7-47da-a967-eef4635b7ae9",
-  'password' : "1FBcB84UAYgt"
+	'username' : "INSERT BLUEMIX CRED HERE",
+  'password' : "INSERT BLUEMIX CRED HERE"
 }
 
 // Create the service wrapper
@@ -108,10 +108,10 @@ console.log('listening at:', port);
 var Twitter = require('node-twitter');
 
 var twitterSearchClient = new Twitter.SearchClient(
-    'pmw5vXFaPIziNYIX20oXuihXv',
-    'HkM0xftGz1R1Nqhn9D6YP0qKp79jeyUV8HVwboT4YZmK5odpdu',
-    '2830064099-9e8pyD2X9Rlz0VS5WCwhdnWmw472l269uC9VlkP',
-    'gUpoL2J2kHm0KCe3RkwAQRvxGm3urw92dISo9QqQQ9POe'
+    '', // insert the 4 twitter keys here. check out node-twitter for exactly how it works. 
+    '',
+    '',
+    ''
 );
 
 function readTweets(callback) {
