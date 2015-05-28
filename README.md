@@ -17,7 +17,7 @@ using NodeJS, ExpressJS,Jade templating, and the Twitter API.
 
 
 ## Running locally
-  The application uses [Node.js][http://nodejs.org/] and [npm][https://www.npmjs.com/] so you will have to download and install them as part of the steps below.
+  The application uses [Node.js](http://nodejs.org/) and [npm](https://www.npmjs.com/) so you will have to download and install them as part of the steps below.
 
 1. Copy the credentials from your `personality-insights-service` service in Bluemix to `app.js`, you can see the credentials using:
 2. Install [Node.js](http://nodejs.org/)
