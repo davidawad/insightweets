@@ -17,7 +17,12 @@ block row-content
         label.link.animated.fadeInUp.delay-1s.whiteText City
           br
           br
-          input(id='city',type='text',value='', placeholder='New York City', name='city')
+          .ui.category.search
+            p 
+            .ui.icon.input
+              input(class="prompt .ui.search" id='city',type='text', value='', placeholder='New York City', name='city')
+              i(class="search icon")
+            .results
         br
         label.link.animated.fadeInUp.delay-1s.whiteText Query
           br

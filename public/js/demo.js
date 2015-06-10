@@ -1,30 +1,46 @@
-/**
- * Copyright 2014 IBM Corp. All Rights Reserved.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
 'use strict';
 var blown = 0;
 
 $(document).ready(function() {
   $('body').css('background-image','none');
 
+    // search content for semantic
+    var content = [
+    { title: 'Andorra' },
+    { title: 'United Arab Emirates' },
+    { title: 'Afghanistan' },
+    { title: 'Antigua' },
+    { title: 'Anguilla' },
+    { title: 'Albania' },
+    { title: 'Armenia' },
+    { title: 'Netherlands Antilles' },
+    { title: 'Angola' },
+    { title: 'Argentina' },
+    { title: 'American Samoa' },
+    { title: 'Austria' },
+    { title: 'Australia' },
+    { title: 'Aruba' },
+    { title: 'Aland Islands' },
+    { title: 'Azerbaijan' },
+    { title: 'Bosnia' },
+    { title: 'Barbados' },
+    { title: 'Bangladesh' },
+    { title: 'Belgium' },
+    { title: 'Burkina Faso' },
+    { title: 'Bulgaria' },
+    { title: 'Bahrain' },
+    { title: 'Burundi' }
+    // etc
+  ];
 
+  /* TODO experimental feature currently has bad z index
+  $('.ui.search').search({
+      source: content
+  });
+  */
 
   $('#submit_button').hover(function() {
     $('body').css('background-image','url("../images/NYC2.jpeg" )' );
-
-
 
     //$("*").css("backgroundColor" ,"#585858");
     $("#title").css("color","white");
@@ -55,7 +71,7 @@ $(document).ready(function() {
     personImageUrl = 'images/tutorial.png'; // Can be blank
 
   // Jquery variables
-  var $content = $('.content'),
+  var $content = $('#content'),
     $loading = $('.loading'),
     $error = $('.error'),
     $errorMsg = $('.errorMsg'),

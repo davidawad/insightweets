@@ -7,7 +7,7 @@ html {
 }
 
 body{
-  background-image:url('../images/NYC2.jpg');
+  background-image:url('../images/NYC2.jpeg');
   background-size: cover;
   transition:background 1s;
 }

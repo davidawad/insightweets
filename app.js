@@ -3,41 +3,36 @@
 var express = require('express'),
   app = express(),
   bluemix = require('./config/bluemix'),
-  watson = require('watson-developer-cloud-alpha'),
+  watson = require('watson-developer-cloud'),
   extend = require('util')._extend,
   fs = require('fs'),
   dummy_text = fs.readFileSync('mobydick.txt');
 
-var query = 'hack'; //searching for 'hack' but query changes by default
+var query = 'hack'; //default search is for 'hack'
 var city = '40.71448,-74.00598,100km' ; // new york by default
 // Bootstrap application settings
 require('./config/express')(app);
 
+
 // if bluemix credentials exists, then override local
-/*
 var credentials = extend({
     version: 'v2',
     url: '<url>',
     username: '<username>',
     password: '<password>'
 }, bluemix.getServiceCreds('personality_insights')); // VCAP_SERVICES
-*/
 
-var credentials ={
-  'version' : 'v2',
-  'url' : "https://gateway.watsonplatform.net/personality-insights/api",
-	'username' : "INSERT BLUEMIX CRED HERE",
-  'password' : "INSERT BLUEMIX CRED HERE"
-}
 
 // Create the service wrapper
 var personalityInsights = new watson.personality_insights(credentials);
 
 // render index page
 app.get('/', function(req, res){
+
   //console.log(req.connection.remoteAddress);
   console.log(req);
 
+  // example tweets
   var tweets = "@lifehacker: Organize those open bags in your freezer with binder clips: http://t.co/0jb3iZizkA http://t.co/ch7UNxdikq less comfy ride.@marinochris_ get this fucking hack solved because you have been afflicting my Twitter for the";
   readTweets(function(tweets) {
     res.render('index', { content: tweets });
@@ -108,10 +103,10 @@ console.log('listening at:', port);
 var Twitter = require('node-twitter');
 
 var twitterSearchClient = new Twitter.SearchClient(
-    '', // insert the 4 twitter keys here. check out node-twitter for exactly how it works. 
-    '',
-    '',
-    ''
+  'pmw5vXFaPIziNYIX20oXuihXv',
+  'HkM0xftGz1R1Nqhn9D6YP0qKp79jeyUV8HVwboT4YZmK5odpdu',
+  '2830064099-9e8pyD2X9Rlz0VS5WCwhdnWmw472l269uC9VlkP',
+  'gUpoL2J2kHm0KCe3RkwAQRvxGm3urw92dISo9QqQQ9POe'
 );
 
 function readTweets(callback) {
