@@ -4,10 +4,10 @@ declared-services:
     label: personality_insights
     plan: 'IBM Watson Personality Insights Monthly Plan'
 applications:
-- name: personality-insights-nodejs-davidawad-1759
+- name: insightweets
   command: node app.js
   path: .
   memory: 256M
   services:
     - personality-insights-service
-  host: personality-insights-nodejs-davidawad-1759
+  host: insightweets
