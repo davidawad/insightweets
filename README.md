@@ -2,6 +2,7 @@
 # "Find out about what people are like, anywhere."
 
 ## This Hack won the IBM Bluemix prize at HackNY
+## Tweeted about by [MLH](https://twitter.com/MLHacks/status/574611716157411328)!
 
 ## An app deployed on IBM bluemix using Watson personality insights based on an aggregate of location specific Tweets from Twitter. 
 ## Built on NodeJS, using Express.js, and the Jade templating language. 
@@ -30,7 +31,7 @@ applications:
   name: <application-name>
   command: node app.js
   path: .
-  memory: 256M
+  memory: 128M
   ```
   The name you use will determinate your application url initially, e.g. `<application-name>.mybluemix.net`.
 
