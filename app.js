@@ -1,12 +1,15 @@
 'use strict';
 
-var express = require('express'),
-  app = express(),
-  bluemix = require('./config/bluemix'),
-  watson = require('watson-developer-cloud'),
-  extend = require('util')._extend,
-  fs = require('fs'),
-  dummy_text = fs.readFileSync('mobydick.txt');
+var express    = require('express'),
+    Twitter    = require('node-twitter'),
+    app        = express(),
+    bluemix    = require('./config/bluemix'),
+    watson     = require('watson-developer-cloud'),
+    extend     = require('util')._extend,
+    fs         = require('fs')
+
+
+
 
 var query = 'hack'; //default search is for 'hack'
 var city = '40.71448,-74.00598,100km' ; // new york by default
@@ -28,9 +31,6 @@ var personalityInsights = new watson.personality_insights(credentials);
 
 // render index page
 app.get('/', function(req, res){
-
-  //console.log(req.connection.remoteAddress);
-  console.log(req);
 
   // example tweets
   var tweets = "@lifehacker: Organize those open bags in your freezer with binder clips: http://t.co/0jb3iZizkA http://t.co/ch7UNxdikq less comfy ride.@marinochris_ get this fucking hack solved because you have been afflicting my Twitter for the";
@@ -64,7 +64,7 @@ app.get('/landing', function(req, res){
 // that `req.body` will be filled in with the form elements
 app.post('/landing', function(req, res){
 
-
+  // TODO use an api for this holy shit
   var form_city = req.body.city.toLowerCase() ;
   switch(form_city) {
 
@@ -100,7 +100,6 @@ var port = process.env.VCAP_APP_PORT || 3000;
 app.listen(port);
 console.log('listening at:', port);
 
-var Twitter = require('node-twitter');
 
 var twitterSearchClient = new Twitter.SearchClient(
   'pmw5vXFaPIziNYIX20oXuihXv',

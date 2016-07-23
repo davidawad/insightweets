@@ -13,6 +13,7 @@
   },
   "devDependencies": {},
   "scripts": {
+    "start": "node app.js",
     "test": "nodejs app.js"
   },
   "repository": {
